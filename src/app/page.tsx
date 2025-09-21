@@ -1,5 +1,5 @@
-import NetworkDashboard from '@/components/dashboard/network-dashboard';
+import AdvancedDashboard from '@/components/dashboard/advanced-dashboard';
 
 export default function Home() {
-  return <NetworkDashboard />;
+  return <AdvancedDashboard />;
 }
