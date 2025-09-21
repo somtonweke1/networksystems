@@ -1,0 +1,53 @@
+{
+  "name": "networkoracle-pro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "World-Class Network Intelligence Platform",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "prepare": "husky install",
+    "dev:web": "cd apps/web && pnpm dev",
+    "dev:centrality": "cd services/centrality-service && python main.py",
+    "dev:analysis": "cd services/analysis-service && python main.py",
+    "build:web": "cd apps/web && pnpm build",
+    "test:web": "cd apps/web && pnpm test",
+    "test:centrality": "cd services/centrality-service && python -m pytest",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "deploy:vercel": "cd apps/web && vercel --prod",
+    "deploy:setup": "vercel",
+    "build:packages": "cd packages/types && pnpm build && cd ../ui && pnpm build"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.10.16",
+    "turbo": "^1.10.16",
+    "typescript": "^5.3.2",
+    "prettier": "^3.1.1",
+    "eslint": "^8.56.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prisma": "^5.7.1",
+    "@prisma/client": "^5.7.1"
+  },
+  "packageManager": "pnpm@8.10.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

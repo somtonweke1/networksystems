@@ -1,0 +1,317 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User and Authentication
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  role      UserRole @default(ANALYST)
+  organization String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  networks     Network[]
+  analyses     Analysis[]
+  dataSources  DataSource[]
+  sessions     Session[]
+  accounts     Account[]
+
+  @@map("users")
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@map("accounts")
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+  @@map("verification_tokens")
+}
+
+// Network Data Models
+model Network {
+  id          String      @id @default(cuid())
+  name        String
+  description String?
+  type        NetworkType
+  properties  Json        @default("{}")
+  metadata    Json        @default("{}")
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  
+  // Relations
+  userId      String
+  user        User        @relation(fields: [userId], references: [id])
+  nodes       Node[]
+  edges       Edge[]
+  analyses    Analysis[]
+  dataSources DataSource[]
+
+  @@map("networks")
+}
+
+model Node {
+  id        String   @id @default(cuid())
+  nodeId    String
+  label     String?
+  properties Json    @default("{}")
+  position  Json?    @default("{}")
+  networkId String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  network     Network @relation(fields: [networkId], references: [id], onDelete: Cascade)
+  sourceEdges Edge[]  @relation("EdgeSource")
+  targetEdges Edge[]  @relation("EdgeTarget")
+  centrality  CentralityResult[]
+
+  @@unique([networkId, nodeId])
+  @@map("nodes")
+}
+
+model Edge {
+  id        String   @id @default(cuid())
+  edgeId    String
+  source    String
+  target    String
+  weight    Float?
+  properties Json    @default("{}")
+  networkId String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  network    Network @relation(fields: [networkId], references: [id], onDelete: Cascade)
+  sourceNode Node    @relation("EdgeSource", fields: [source], references: [nodeId])
+  targetNode Node    @relation("EdgeTarget", fields: [target], references: [nodeId])
+
+  @@unique([networkId, edgeId])
+  @@map("edges")
+}
+
+// Analysis Models
+model Analysis {
+  id          String      @id @default(cuid())
+  type        AnalysisType
+  status      AnalysisStatus @default(PENDING)
+  parameters  Json        @default("{}")
+  results     Json?
+  metadata    Json        @default("{}")
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  // Relations
+  networkId   String
+  userId      String
+  network     Network     @relation(fields: [networkId], references: [id], onDelete: Cascade)
+  user        User        @relation(fields: [userId], references: [id])
+  centralities CentralityAnalysis[]
+
+  @@map("analyses")
+}
+
+model CentralityAnalysis {
+  id          String      @id @default(cuid())
+  type        CentralityType
+  parameters  Json        @default("{}")
+  results     Json
+  metadata    Json        @default("{}")
+  executionTime Float
+  createdAt   DateTime    @default(now())
+
+  // Relations
+  analysisId  String
+  analysis    Analysis    @relation(fields: [analysisId], references: [id], onDelete: Cascade)
+  results     CentralityResult[]
+
+  @@map("centrality_analyses")
+}
+
+model CentralityResult {
+  id          String   @id @default(cuid())
+  nodeId      String
+  value       Float
+  rank        Int?
+  normalized  Boolean  @default(true)
+  createdAt   DateTime @default(now())
+
+  // Relations
+  centralityAnalysisId String
+  centralityAnalysis   CentralityAnalysis @relation(fields: [centralityAnalysisId], references: [id], onDelete: Cascade)
+  nodeId               String
+  node                 Node               @relation(fields: [nodeId], references: [id], onDelete: Cascade)
+
+  @@unique([centralityAnalysisId, nodeId])
+  @@map("centrality_results")
+}
+
+// Data Source Models
+model DataSource {
+  id          String       @id @default(cuid())
+  name        String
+  type        DataSourceType
+  config      Json         @default("{}")
+  mapping     Json         @default("{}")
+  status      DataSourceStatus @default(ACTIVE)
+  lastSync    DateTime?
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  // Relations
+  networkId   String
+  userId      String
+  network     Network      @relation(fields: [networkId], references: [id], onDelete: Cascade)
+  user        User         @relation(fields: [userId], references: [id])
+
+  @@map("data_sources")
+}
+
+// Visualization Models
+model Visualization {
+  id          String   @id @default(cuid())
+  name        String
+  config      Json     @default("{}")
+  state       Json     @default("{}")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  networkId   String
+  network     Network  @relation(fields: [networkId], references: [id], onDelete: Cascade)
+
+  @@map("visualizations")
+}
+
+// Audit and Logging
+model AuditLog {
+  id          String   @id @default(cuid())
+  action      String
+  entityType  String
+  entityId    String
+  changes     Json?
+  metadata    Json     @default("{}")
+  userId      String?
+  createdAt   DateTime @default(now())
+
+  @@map("audit_logs")
+}
+
+model PerformanceMetrics {
+  id          String   @id @default(cuid())
+  operation   String
+  duration    Float
+  metadata    Json     @default("{}")
+  createdAt   DateTime @default(now())
+
+  @@map("performance_metrics")
+}
+
+// Enums
+enum UserRole {
+  ADMIN
+  ANALYST
+  VIEWER
+  GUEST
+}
+
+enum NetworkType {
+  DIRECTED
+  UNDIRECTED
+  MULTIGRAPH
+  WEIGHTED
+}
+
+enum AnalysisType {
+  CENTRALITY
+  COMMUNITY
+  PATH
+  CLUSTERING
+  COMPREHENSIVE
+}
+
+enum AnalysisStatus {
+  PENDING
+  RUNNING
+  COMPLETED
+  FAILED
+  CANCELLED
+}
+
+enum CentralityType {
+  DEGREE
+  BETWEENNESS
+  CLOSENESS
+  EIGENVECTOR
+  KATZ
+  PAGERANK
+  BONACICH_POWER
+  HITS_HUBS
+  HITS_AUTHORITIES
+  LEVERAGE
+  LOAD
+  HARMONIC
+  SUBGRAPH
+  ALPHA
+  COMMUNICABILITY_BETWEENNESS
+}
+
+enum DataSourceType {
+  CSV
+  JSON
+  XML
+  DATABASE
+  API
+  SOCIAL_MEDIA
+  CRM
+  ERP
+  CUSTOM
+}
+
+enum DataSourceStatus {
+  ACTIVE
+  INACTIVE
+  ERROR
+  PROCESSING
+}
