@@ -9,7 +9,7 @@
 
 ---
 
-## 🎯 **What is NetworkOracle Pro?**
+##  **What is NetworkOracle Pro?**
 
 NetworkOracle Pro is a comprehensive network intelligence platform that democratizes advanced graph analytics for business users. It enables organizations to analyze complex data relationships and uncover hidden insights that traditional analytics tools miss.
 
@@ -23,7 +23,7 @@ NetworkOracle Pro is a comprehensive network intelligence platform that democrat
 
 ---
 
-## 🚀 **Quick Start**
+##  **Quick Start**
 
 ### **Prerequisites**
 - Node.js 18.x or higher
@@ -62,7 +62,7 @@ docker run -p 3000:3000 networkoracle-pro
 
 ---
 
-## 📊 **Core Capabilities**
+##  **Core Capabilities**
 
 ### **Centrality Analysis**
 Identify the most important nodes in your network using advanced algorithms:
@@ -94,7 +94,7 @@ Connect to various data sources:
 
 ---
 
-## 🏗️ **Architecture**
+##  **Architecture**
 
 ### **Technology Stack**
 
@@ -143,7 +143,7 @@ networkoracle-pro/
 
 ---
 
-## 📚 **API Documentation**
+##  **API Documentation**
 
 ### **Centrality API**
 
@@ -201,7 +201,7 @@ Save network data and analysis results.
 
 ---
 
-## 🎯 **Use Cases**
+##  **Use Cases**
 
 ### **Financial Services**
 - **Fraud Detection**: Identify suspicious transaction patterns and fraud networks
@@ -225,7 +225,7 @@ Save network data and analysis results.
 
 ---
 
-## 📈 **Performance**
+##  **Performance**
 
 ### **Scalability**
 - **Nodes**: Tested with 10+ million nodes
@@ -241,7 +241,7 @@ Save network data and analysis results.
 
 ---
 
-## 🔒 **Security**
+##  **Security**
 
 ### **Data Protection**
 - **Encryption**: End-to-end encryption for data in transit and at rest
@@ -257,7 +257,7 @@ Save network data and analysis results.
 
 ---
 
-## 🧪 **Testing**
+##  **Testing**
 
 ### **Run Tests**
 ```bash
@@ -292,7 +292,7 @@ npm run test:coverage
 
 ---
 
-## 🤝 **Contributing**
+##  **Contributing**
 
 We welcome contributions from the community! Please see our [Contributing Guide](docs/contributing.md) for details.
 
@@ -317,7 +317,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 **Support**
+##  **Support**
 
 ### **Getting Help**
 - **Documentation**: Check our comprehensive docs
@@ -332,7 +332,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🎯 **Roadmap**
+##  **Roadmap**
 
 ### **Upcoming Features**
 - **Machine Learning**: Predictive analytics and anomaly detection
@@ -347,7 +347,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 🙏 **Acknowledgments**
+##  **Acknowledgments**
 
 - **D3.js**: For powerful data visualization capabilities
 - **Next.js**: For the excellent React framework
