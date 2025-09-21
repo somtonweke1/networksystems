@@ -191,9 +191,9 @@ npm run dev
 =======
 5. **Open your browser**
 Navigate to `http://localhost:3000` to see NetworkOracle Pro in action!
->>>>>>> bfd5f82 (🚀 Add Advanced ML & 3D Visualization Features)
+>>>>>>> bfd5f82 ( Add Advanced ML & 3D Visualization Features)
 
-## 🎮 Usage Guide
+##  Usage Guide
 
 ### 1. Load Sample Data
 Click "Load Sample Network" to get started with a pre-built network for testing.
@@ -370,7 +370,7 @@ POST /api/ml/anomaly
 - **Communication**: Model information flow and network effects
 >>>>>>> bfd5f82 ( Add Advanced ML & 3D Visualization Features)
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 ```bash
@@ -396,7 +396,7 @@ ENCRYPTION_KEY=your_encryption_key_here
 - **UI Components**: Customize the dashboard layout and components
 - **API Endpoints**: Extend the API with new analysis functions
 
-## 📈 Performance Metrics
+##  Performance Metrics
 
 ### Technical Benchmarks
 - **Algorithm Response Time**: <100ms for most centrality calculations
@@ -459,8 +459,8 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ##  **License**
 =======
-## 📄 License
->>>>>>> bfd5f82 (🚀 Add Advanced ML & 3D Visualization Features)
+## License
+>>>>>>> bfd5f82 ( Add Advanced ML & 3D Visualization Features)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -476,7 +476,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Tailwind CSS** for beautiful styling
 >>>>>>> bfd5f82 ( Add Advanced ML & 3D Visualization Features)
 
-## 📞 Support
+##  Support
 
 - **Documentation**: [docs.networkoracle.pro](https://docs.networkoracle.pro)
 - **Community**: [Discord Server](https://discord.gg/networkoracle)
