@@ -3,26 +3,18 @@
 import React from 'react';
 import { Header } from './header';
 import { Sidebar } from './sidebar';
-import { cn } from '@/lib/utils';
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
-  className?: string;
 }
 
-export function DashboardLayout({ children, className }: DashboardLayoutProps) {
+export function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
+    <div className="min-h-screen bg-gray-50">
       <Header />
-      
-      {/* Main Layout */}
       <div className="flex">
-        {/* Sidebar */}
         <Sidebar />
-        
-        {/* Main Content */}
-        <main className={cn("flex-1 overflow-auto", className)}>
+        <main className="flex-1 p-6">
           {children}
         </main>
       </div>
