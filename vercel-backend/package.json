@@ -1,0 +1,17 @@
+{
+  "name": "networkoracle-backend-vercel",
+  "version": "1.0.0",
+  "description": "NetworkOracle Pro Backend APIs for Vercel",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step needed for Vercel functions'",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@vercel/node": "^3.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
