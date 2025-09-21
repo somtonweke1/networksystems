@@ -1,6 +1,6 @@
 # NetworkOracle Pro - Standalone Deployment
 
-🚀 **World-class network intelligence platform for advanced graph analysis and visualization**
+network intelligence platform for advanced graph analysis and visualization**
 
 ## Quick Deploy to Vercel
 
