@@ -14,12 +14,12 @@
 NetworkOracle Pro is a comprehensive network intelligence platform that democratizes advanced graph analytics for business users. It enables organizations to analyze complex data relationships and uncover hidden insights that traditional analytics tools miss.
 
 ### **Key Features**
-- **🔍 Advanced Graph Analytics**: 15+ centrality algorithms including Degree, Betweenness, Closeness, Eigenvector, PageRank, Katz, HITS, and Harmonic
-- **⚡ Real-Time Processing**: Analyze millions of nodes and edges with sub-100ms response times
-- **🎨 Interactive Visualizations**: Dynamic network graphs with force-directed layouts and interactive exploration
-- **🔒 Enterprise Security**: Multi-tenant architecture with SOC2 compliance and GDPR readiness
-- **🔌 Easy Integration**: RESTful APIs and 50+ data connectors for seamless integration
-- **📊 No-Code Interface**: Business users can perform complex analysis without technical expertise
+- ** Advanced Graph Analytics**: 15+ centrality algorithms including Degree, Betweenness, Closeness, Eigenvector, PageRank, Katz, HITS, and Harmonic
+- ** Real-Time Processing**: Analyze millions of nodes and edges with sub-100ms response times
+- ** Interactive Visualizations**: Dynamic network graphs with force-directed layouts and interactive exploration
+- ** Enterprise Security**: Multi-tenant architecture with SOC2 compliance and GDPR readiness
+- ** Easy Integration**: RESTful APIs and 50+ data connectors for seamless integration
+- ** No-Code Interface**: Business users can perform complex analysis without technical expertise
 
 ---
 
@@ -282,7 +282,7 @@ npm run test:coverage
 
 ---
 
-## 📖 **Documentation**
+##  **Documentation**
 
 - **[Getting Started Guide](docs/getting-started.md)**: Comprehensive setup and configuration
 - **[API Reference](docs/api-reference.md)**: Complete API documentation
@@ -311,7 +311,7 @@ We welcome contributions from the community! Please see our [Contributing Guide]
 
 ---
 
-## 📄 **License**
+##  **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
