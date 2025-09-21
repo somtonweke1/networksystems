@@ -1,48 +1,48 @@
-# 🚀 NetworkOracle Pro - Advanced Network Intelligence Platform
+#  NetworkOracle Pro - Advanced Network Intelligence Platform
 
-## 🌟 Overview
+##  Overview
 
 NetworkOracle Pro is a world-class network intelligence platform that transforms complex network data into actionable business insights. Built with cutting-edge technology and powered by AI, it provides advanced network analysis, predictive analytics, and stunning 3D visualizations.
 
-## ✨ Key Features
+##  Key Features
 
-### 🔬 Advanced Network Analysis
+###  Advanced Network Analysis
 - **15+ Centrality Algorithms**: Degree, Betweenness, Closeness, Eigenvector, PageRank, Katz, HITS, Harmonic, Subgraph, and more
 - **Community Detection**: Identify groups and clusters within networks
 - **Path Analysis**: Shortest paths, diameter, and eccentricity calculations
 - **Structural Properties**: Density, clustering coefficient, modularity analysis
 - **Real-Time Processing**: Analyze millions of nodes and edges with sub-100ms response times
 
-### 🤖 Machine Learning & AI
+###  Machine Learning & AI
 - **Predictive Analytics**: Network growth and evolution forecasting
 - **Anomaly Detection**: Identify unusual patterns and security risks
 - **Influence Prediction**: Information spread and viral potential analysis
 - **Community Evolution**: Predict how communities will form and change
 - **OpenAI Integration**: Powered by GPT-4 for intelligent insights
 
-### 🎯 3D Visualization
+###  3D Visualization
 - **Interactive 3D Networks**: Immersive force-directed layouts
 - **Real-time Rendering**: Smooth animations and interactions
 - **Multiple Color Schemes**: Centrality-based, group-based, and custom coloring
 - **Node Selection**: Click to explore node details and properties
 - **Camera Controls**: Pan, zoom, and rotate for optimal viewing
 
-### 📈 Temporal Analysis
+###  Temporal Analysis
 - **Network Evolution**: Track changes over time
 - **Interactive Timeline**: Play, pause, and scrub through network history
 - **Metrics Visualization**: Density, clustering, and growth trends
 - **Evolution Insights**: Growth rates, stability, and complexity analysis
 
-### 🛡️ Enterprise Features
+###  Enterprise Features
 - **Multi-tenant Architecture**: Secure data isolation
 - **Role-based Access Control**: Granular permissions
 - **Audit Logging**: Complete activity tracking
 - **API Management**: RESTful APIs with rate limiting
 - **Scalable Infrastructure**: Cloud-ready deployment
 
-## 🚀 Quick Start
+##  Quick Start
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Frontend Stack
 - **Next.js 15** with App Router
@@ -73,7 +73,7 @@ NetworkOracle Pro is a world-class network intelligence platform that transforms
 - **Terraform** for infrastructure
 - **Monitoring** with DataDog and Sentry
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Node.js 18+ and npm
@@ -178,7 +178,7 @@ networkoracle-pro/
 ```bash
 cp .env.example .env.local
 # Add your OpenAI API key and other configurations
->>>>>>> bfd5f82 (🚀 Add Advanced ML & 3D Visualization Features)
+>>>>>>> bfd5f82 ( Add Advanced ML & 3D Visualization Features)
 ```
 
 4. **Run the development server**
@@ -222,7 +222,7 @@ Click "Load Sample Network" to get started with a pre-built network for testing.
 - **Find Anomalies**: Spot unusual patterns and potential issues
 - **Export Results**: Download analysis data in multiple formats
 
-## 📊 API Documentation
+##  API Documentation
 
 ### Core APIs
 
@@ -316,7 +316,7 @@ Save network data and analysis results.
 ### **Run Tests**
 =======
 #### ML Predictions
->>>>>>> bfd5f82 (🚀 Add Advanced ML & 3D Visualization Features)
+>>>>>>> bfd5f82 ( Add Advanced ML & 3D Visualization Features)
 ```bash
 POST /api/ml/predictive
 {
@@ -336,7 +336,7 @@ POST /api/ml/anomaly
 }
 ```
 
-## 🎯 Use Cases
+##  Use Cases
 
 <<<<<<< HEAD
 ##  **Documentation**
@@ -346,7 +346,7 @@ POST /api/ml/anomaly
 - **Customer Journey Mapping**: Understand user behavior and touchpoints
 - **Organizational Analysis**: Map company structure and communication flows
 - **Market Research**: Analyze competitor networks and market dynamics
->>>>>>> bfd5f82 (🚀 Add Advanced ML & 3D Visualization Features)
+>>>>>>> bfd5f82 ( Add Advanced ML & 3D Visualization Features)
 
 ### Cybersecurity
 - **Threat Detection**: Identify malicious actors and attack patterns
@@ -368,7 +368,7 @@ POST /api/ml/anomaly
 - **Citation Networks**: Study academic collaboration patterns
 - **Transportation**: Optimize routes and infrastructure
 - **Communication**: Model information flow and network effects
->>>>>>> bfd5f82 (🚀 Add Advanced ML & 3D Visualization Features)
+>>>>>>> bfd5f82 ( Add Advanced ML & 3D Visualization Features)
 
 ## 🔧 Configuration
 
@@ -411,7 +411,7 @@ ENCRYPTION_KEY=your_encryption_key_here
 - **Time Savings**: 50% reduction in manual analysis
 - **ROI**: 10x return on investment for enterprise users
 
-## 🚀 Deployment
+##  Deployment
 
 ### Vercel Deployment (Recommended)
 ```bash
@@ -437,7 +437,7 @@ npm run build
 npm start
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
@@ -464,7 +464,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 <<<<<<< HEAD
 ##  **Support**
@@ -474,7 +474,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **OpenAI** for AI-powered insights
 - **Vercel** for deployment infrastructure
 - **Tailwind CSS** for beautiful styling
->>>>>>> bfd5f82 (🚀 Add Advanced ML & 3D Visualization Features)
+>>>>>>> bfd5f82 ( Add Advanced ML & 3D Visualization Features)
 
 ## 📞 Support
 
@@ -517,4 +517,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Built with ❤️ by the NetworkOracle Team**
 
 *Transforming network data into actionable intelligence, one algorithm at a time.*
->>>>>>> bfd5f82 (🚀 Add Advanced ML & 3D Visualization Features)
+>>>>>>> bfd5f82 ( Add Advanced ML & 3D Visualization Features)
