@@ -199,17 +199,17 @@ NetworkOracle Pro is the **world's first no-code network intelligence platform**
 ### **Phase 1: Product-Market Fit (Months 1-6)**
 - **Target**: 10 pilot customers in financial services
 - **Goal**: Validate core use cases and pricing
-- **Metrics**: 80%+ customer satisfaction, $2M ARR
+- **Metrics**: 80%+ customer satisfaction
 
 ### **Phase 2: Market Expansion (Months 7-18)**
 - **Target**: 100 customers across 3 verticals
 - **Goal**: Scale sales and marketing
-- **Metrics**: $20M ARR, 40% growth rate
+- **Metrics**: 40% growth rate
 
 ### **Phase 3: Platform Growth (Months 19-36)**
 - **Target**: 1,000 customers across 5+ verticals
 - **Goal**: Become the standard for network analytics
-- **Metrics**: $100M ARR, 50% growth rate
+- **Metrics**: 50% growth rate
 
 ---
 
@@ -248,11 +248,11 @@ NetworkOracle Pro is the **world's first no-code network intelligence platform**
 - **Traction**: Strong early customer interest and technical validation
 - **Scalability**: Architecture designed for global enterprise deployment
 
-### **What We Need from YC**
-- **Network Access**: Connections to enterprise customers and industry experts
-- **Technical Mentorship**: Guidance on scaling and enterprise sales
-- **Funding**: $500K to accelerate product development and market expansion
-- **Credibility**: YC brand recognition for enterprise sales
+### **What We're Building**
+- **Enterprise Platform**: Scalable network analytics for large organizations
+- **Technical Excellence**: Advanced algorithms and enterprise-grade architecture
+- **Market Leadership**: Becoming the standard for network intelligence
+- **Innovation**: Continuous advancement in graph analytics technology
 
 ---
 
@@ -260,7 +260,7 @@ NetworkOracle Pro is the **world's first no-code network intelligence platform**
 
 **For Clients**: "Transform your data into competitive advantage. Schedule a demo to see how NetworkOracle Pro can solve your specific network intelligence challenges."
 
-**For YC**: "Join us in democratizing graph analytics and building the infrastructure for the next generation of AI-powered businesses."
+**For Partners**: "Join us in democratizing graph analytics and building the infrastructure for the next generation of AI-powered businesses."
 
 ---
 

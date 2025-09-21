@@ -153,21 +153,6 @@
 
 ---
 
-## 🎯 **Investment Opportunity**
-
-### **What We're Seeking**
-- **Funding**: $500K seed round
-- **Use of Funds**: Product development (40%), Sales & Marketing (35%), Team (25%)
-- **Timeline**: 18-month runway to $20M ARR
-
-### **Expected Returns**
-- **Year 1**: $2M ARR (10 customers)
-- **Year 2**: $20M ARR (100 customers)
-- **Year 3**: $100M ARR (1,000 customers)
-- **Exit Potential**: $1B+ (10x revenue multiple)
-
----
-
 ## 🎯 **Call to Action**
 
 ### **For Enterprise Clients**
@@ -178,21 +163,11 @@
 2. **Pilot Program**: 30-day proof of concept with guaranteed ROI
 3. **Enterprise Deployment**: Full implementation with dedicated support
 
-### **For Investors**
-"Join us in democratizing graph analytics and building the infrastructure for AI-powered businesses."
-
-**Investment Highlights**:
-- **Massive Market**: $100B+ TAM with 35%+ growth
-- **Strong Unit Economics**: 53:1 LTV/CAC ratio
-- **Technical Moat**: Proprietary algorithms and architecture
-- **Experienced Team**: Deep expertise in graph theory and enterprise software
-
 ---
 
 ## 📞 **Contact Information**
 
 **Demo Request**: [Schedule a personalized demo with your data]
-**Investment Inquiries**: [Connect with our founding team]
 **Partnership Opportunities**: [Explore integration possibilities]
 
 ---
